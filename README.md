@@ -1,93 +1,105 @@
-☕ CoffeeShopManagementSys
-CoffeeShopManagementSys is a C# Windows Forms application using Entity Framework Core and MS SQL Server to manage and streamline the operations of a coffee shop. It features intuitive order management, inventory tracking, payment processing, and PDF receipt generation, designed to enhance both customer service and staff efficiency.
 
-🔧 Features
-🧾 Order Management – Manage and process customer orders quickly.
+# ☕ CoffeeShopManagementSys
 
-☕ Menu Management – Add/edit items with pricing, categories, and availability.
+**CoffeeShopManagementSys** is a Windows Forms application developed in **C#** using **Entity Framework Core** and **MS SQL Server**, designed to efficiently manage coffee shop operations. It features order management, inventory tracking, employee records, payment processing, and PDF receipt generation – all in a user-friendly interface.
 
-📦 Inventory Control – Track ingredient and supply usage with low-stock alerts.
+---
 
-👥 Employee Records – Maintain roles, shifts, and staff details.
+## 🔧 Features
 
-💳 Payments & Receipts – Secure payment handling with auto-generated PDF receipts.
+- 🧾 **Order Management** – Add, edit, and process customer orders easily.
+- ☕ **Menu Management** – Customize your menu with item categories and pricing.
+- 📦 **Inventory Control** – Track ingredients and stock with automatic alerts.
+- 👥 **Employee Records** – Manage staff information and access roles.
+- 💳 **Payment & PDF Receipts** – Handle payments and print/download receipts.
+- 📈 **Sales Reports** – View daily, weekly, and monthly sales analytics.
+- 🔐 **Login System** – Admin and staff access control.
 
-📈 Reports Dashboard – View sales summaries and key performance metrics.
+---
 
-🔐 Login System – Role-based access control for Admins and Staff.
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
-C# WinForms
+- **C# WinForms**
+- **.NET 8 / .NET Framework**
+- **Entity Framework Core**
+- **MS SQL Server**
+- **PdfSharp / iTextSharp** – for generating PDF receipts
 
-.NET 8 / .NET Framework
+---
 
-Entity Framework Core
+## 🎥 Demo
 
-MS SQL Server
+![Demo GIF or Screenshot Placeholder](https://github.com/visall1/CoffeeshopManagementsys/blob/main/demo/demo.gif)
 
-PdfSharp / iTextSharp for PDF generation
+> Replace the above URL with your actual demo GIF or screenshot file once available.
 
-🎥 Demo
+---
 
+## 🚀 Deployment
 
-Replace the above link with your actual GIF or screenshot
+### Prerequisites
 
-🚀 Deployment
-Prerequisites
-Visual Studio 2022 or newer
+- Visual Studio 2022 or newer
+- .NET SDK 8+
+- MS SQL Server (Express or full version)
 
-.NET SDK 8+
+### Setup Instructions
 
-MS SQL Server (Express or full version)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/visall1/CoffeeshopManagementsys.git
+   ```
 
-Steps
-Clone the repo:
+2. **Open the solution file** in Visual Studio.
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/CoffeeShopManagementSys.git
-Open the solution in Visual Studio.
+3. **Configure your database connection string**  
+   In `App.config` or directly in your `DbContext` file.
 
-Configure the database connection string in App.config or Program.cs.
+4. **Run EF Core migrations (if needed):**
+   ```
+   Tools > NuGet Package Manager > Package Manager Console
 
-Apply EF Core Migrations:
+   PM> Update-Database
+   ```
 
-mathematica
-Copy
-Edit
-Tools > NuGet Package Manager > Package Manager Console
+5. **Build and run** the application.
 
-PM> Update-Database
-Build and run the application.
+---
 
-📂 Folder Structure
-bash
-Copy
-Edit
-CoffeeShopManagementSys/
-├── Forms/             # UI Forms (Dashboard, Order, Login, etc.)
-├── Models/            # EF Core entity models
-├── Data/              # DbContext, migrations
-├── Services/          # Business logic and helpers
-├── Utils/             # PDF Generator, Logging, etc.
+## 📂 Folder Structure
+
+```
+CoffeeshopManagementsys/
+├── Forms/             # All Windows Forms (UI)
+├── Models/            # Entity Framework Core models
+├── Data/              # DbContext and EF migrations
+├── Services/          # Business logic, helpers
+├── Utils/             # PDF generator, logger, etc.
 ├── Program.cs         # Main entry point
 └── App.config         # Configuration settings
-📸 Screenshots
-(Replace with your actual images)
+```
 
-Main Dashboard
+---
 
-Order Form
+## 📸 Screenshots
 
-Inventory View
+> Add these to the `/demo/` folder and link them here:
 
-PDF Receipt Sample
+- Dashboard view  
+- Order processing screen  
+- Inventory management  
+- PDF receipt preview
 
-🙋‍♂️ Author
-Your Name
-Student at IT Academy Step Cambodia
-GitHub: github.com/yourusername
+---
 
-📄 License
-MIT License. See LICENSE for more information.
+## 🙋‍♂️ Author
+
+**Visal**  
+Student at IT Academy Step Cambodia  
+GitHub: [https://github.com/visall1](https://github.com/visall1)
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** – see the [LICENSE](https://github.com/visall1/CoffeeshopManagementsys/blob/main/LICENSE) file for details.
